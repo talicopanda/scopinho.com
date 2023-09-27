@@ -1,0 +1,13 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.message h2 {
+    font-size: 200px;
+}
+
+.container {}

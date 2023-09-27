@@ -1,0 +1,51 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 40px;
+    align-items: center;
+    margin-top: 11vh;
+    text-align: left;
+}
+
+.header h2 {
+    font-size: 32px;
+    margin-bottom: 5vh;
+}
+
+.header h3 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-left: 20px; 
+    position: absolute;
+    top: 0px;
+}
+
+.header p {
+    margin-top: 4vw;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.text {
+    position: relative;
+}
+
+.image {
+    max-width: 40vh;
+    margin: 0 auto;
+    border-radius: 2%;
+}
+
+.container {
+    height: 100vh;
+}
+
+.list, .sublist {
+    font-size: 17px;
+    margin-top: 1vw;
+    list-style-type: none;
+}
+
+.sublist {
+    margin-left: 2vw;
+}
