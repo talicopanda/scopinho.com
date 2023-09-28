@@ -40,12 +40,12 @@ export default function Navbar( { isGrey, isPurple } ) {
               <a href="mailto:tales@scopinho.com?subject=scopinho.com | Let's Talk!" target="_blank" rel="noreferrer" aria-label="Email Address" style={{marginLeft: "30px"}}><ScaledIcon ><MdOutlineMail fill={color}  /></ScaledIcon></a>
           </div>
           <div className="navbar-toggle" onClick={showSidebar}>
-            <span className='bar'></span>
-            <span className='bar'></span>
-            <span className='bar'></span>
+            <span className='bar' style={{backgroundColor: color}}></span>
+            <span className='bar' style={{backgroundColor: color}}></span>
+            <span className='bar' style={{backgroundColor: color}}></span>
           </div>
           <div className="sidebar">
-            <a onClick={hideSidebar}><ScaledIcon><MdClose fill={colors.purple}  /></ScaledIcon></a>
+            <div onClick={hideSidebar}><ScaledIcon><MdClose fill={colors.purple}  /></ScaledIcon></div>
             <div className='sidebar-links'>
               { menuItems.map((item) =>   
               <Link to={item[1]}

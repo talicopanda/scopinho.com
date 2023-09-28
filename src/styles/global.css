@@ -97,7 +97,6 @@ nav .socials a:hover {
 .navbar-toggle .bar {
     height: 3px;
     width: 100%;
-    background-color: var(--white);
     border-radius: 10px;
 }
 
@@ -131,7 +130,7 @@ nav .sidebar-links a {
     margin: 3vh auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .navbar-toggle {
         display: flex;
     }
@@ -270,7 +269,7 @@ footer p{
     text-align-last: unset;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .line-break {
         text-align-last: justify;
     }
