@@ -86,6 +86,63 @@ nav .socials a:hover {
     transform: scale(1.15);
 }
 
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.navbar-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+nav .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+}
+
+nav .sidebar svg {
+    margin: 1rem;
+    top: 0;
+    left: 0;
+}
+
+nav .sidebar-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--purple);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3vh auto;
+}
+
+@media (max-width: 1000px) {
+    .navbar-toggle {
+        display: flex;
+    }
+
+    nav .links {
+        display: none;
+        width: 100%;
+    }
+
+}
+
 footer p{
     text-align: center;
     color: var(--dark-purple);

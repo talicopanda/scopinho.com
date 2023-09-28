@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import { IconContext } from "react-icons";
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { MdOutlineMail } from 'react-icons/md';
+import { MdOutlineMail, MdClose } from 'react-icons/md';
 import React from 'react'
 import { colors } from '../constants/colors';
 
@@ -10,11 +10,17 @@ function ScaledIcon({ children }) {
     <IconContext.Provider
       value={{ size: '32px' }}
     >
-      <div>
-        { children }
-      </div>
+      { children }
     </IconContext.Provider>
   )
+}
+
+const showSidebar = () => {
+  document.querySelector('.sidebar').style.display = 'flex';
+};
+
+const hideSidebar = () => {
+  document.querySelector('.sidebar').style.display = 'none';
 }
 
 export default function Navbar( { isGrey, isPurple } ) {
@@ -33,15 +39,32 @@ export default function Navbar( { isGrey, isPurple } ) {
               <a href="https://twitter.com/otalyco/" target="_blank" rel="noreferrer" aria-label="Twitter Page"><ScaledIcon ><FaTwitter fill={color}  /></ScaledIcon></a>
               <a href="mailto:tales@scopinho.com?subject=scopinho.com | Let's Talk!" target="_blank" rel="noreferrer" aria-label="Email Address" style={{marginLeft: "30px"}}><ScaledIcon ><MdOutlineMail fill={color}  /></ScaledIcon></a>
           </div>
-          <div className="links">
+          <div className="navbar-toggle" onClick={showSidebar}>
+            <span className='bar'></span>
+            <span className='bar'></span>
+            <span className='bar'></span>
+          </div>
+          <div className="sidebar">
+            <a onClick={hideSidebar}><ScaledIcon><MdClose fill={colors.purple}  /></ScaledIcon></a>
+            <div className='sidebar-links'>
               { menuItems.map((item) =>   
-              <Link to={item[1]} 
-                    style={{color: color}}
+              <Link to={item[1]}
                     title={item[0]}
                     key={item[0]}> 
                 {item[0]} 
               </Link>) }
-              <a href="resume.pdf" title="CV" style={{color: color}}>CV</a>
+              <a href="resume.pdf" title="CV">CV</a>
+            </div>
+          </div>
+          <div className="links">
+            { menuItems.map((item) =>   
+            <Link to={item[1]} 
+                  style={{color: color}}
+                  title={item[0]}
+                  key={item[0]}> 
+              {item[0]} 
+            </Link>) }
+            <a href="resume.pdf" title="CV" style={{color: color}}>CV</a>
           </div>
         </div>
     </nav>
