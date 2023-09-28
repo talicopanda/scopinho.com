@@ -41,7 +41,7 @@ export default function Navbar( { isGrey, isPurple } ) {
                     key={item[0]}> 
                 {item[0]} 
               </Link>) }
-              <a href="../resume.pdf" title="CV" style={{color: color}}>CV</a>
+              <a href="resume.pdf" title="CV" style={{color: color}}>CV</a>
           </div>
         </div>
     </nav>
