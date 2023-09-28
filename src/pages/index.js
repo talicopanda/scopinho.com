@@ -22,6 +22,7 @@ export default function Home({ data }) {
           <section className={styles.header}>
             <div id={styles.header_text}>
               <h1>{ title }</h1>
+              <title>{ title } | Home</title>
               <h2>Developer <i>et al.</i></h2>
               <h3 style={{display: 'flex', flexFlow: 'row', flexWrap: 'wrap'}}>Interested in<span className="line-break">&nbsp;</span>
                 <span style={{color: colors.white, backgroundColor: colors.red, padding: '0 3px 3px 5px'}}>

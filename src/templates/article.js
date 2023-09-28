@@ -10,6 +10,7 @@ export default function Article({data}) {
       <Navbar isPurple />
       <div className={styles.container}>
         <h1>{post.frontmatter.title}</h1>
+        <title>{post.frontmatter.title}</title>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </div>
     </div>

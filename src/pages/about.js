@@ -10,6 +10,7 @@ export default function About() {
       <div className='layout'>
         <div className={styles.container}>
           <Navbar isPurple />
+          <title>Tales Scopinho | About</title>
           <section className={styles.header}>
               <StaticImage className={styles.image} src="../images/about_pic.jpg" alt="about pic" />
               <div className={styles.text}>
