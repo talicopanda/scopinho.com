@@ -40,14 +40,14 @@ export default function Home({ data }) {
           </section>
         </div>
       </div>
-      <section className="section">
+      {/* <section className="section">
         <Cards info={markdownFiles.filter(node => node.frontmatter.tags !== "article").map(node => 
           ({ 
             ...(node.frontmatter),
             id: node.id,
           }))
         }/>
-      </section>  
+      </section>   */}
       <Footer />
     </>
   )
