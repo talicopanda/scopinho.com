@@ -32,5 +32,8 @@ module.exports = {
     title: 'Tales Scopinho',
     description: 'Personal website',
     copyright: 'Copyright © 2024 Tales Scopinho'
+  },
+  flags: {
+    DEV_SSR: true,
   }
 }
