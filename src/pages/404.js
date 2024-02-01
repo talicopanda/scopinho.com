@@ -15,13 +15,13 @@ const NotFound = ({ data }) => {
         <div className={styles.message}>
           <h2>404</h2>
           <p>Oops, that page doesn't exist (yet)!</p>
-          <p>Try going back to <Link to="/"><strong>Home</strong></Link> or check out some of these cool reads while you are here:</p>
+          {/* <p>Try going back to <Link to="/"><strong>Home</strong></Link> or check out some of these cool reads while you are here:</p>
           <Cards info={markdownFiles.filter(node => node.frontmatter.tags !== "article").sort(() => .5 - Math.random()).slice(0, 3).map(node => 
             ({ 
               ...(node.frontmatter),
               id: node.id,
             }))
-          }/>
+          }/> */}
         </div>
       </div>
       <Footer />

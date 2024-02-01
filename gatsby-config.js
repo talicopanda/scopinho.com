@@ -31,6 +31,6 @@ module.exports = {
   siteMetadata: {
     title: 'Tales Scopinho',
     description: 'Personal website',
-    copyright: 'Copyright © 2023 Tales Scopinho'
+    copyright: 'Copyright © 2024 Tales Scopinho'
   }
 }
