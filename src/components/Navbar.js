@@ -30,6 +30,10 @@ export default function Navbar( { isGrey, isPurple } ) {
     ['About', '/about']
     // ['Knowledge Graph', '/knowledgeGraph']
   ];
+
+  // Check if window is defined (so if in the browser or in node.js).
+  const isBrowser = typeof window !== "undefined";
+
   return (
     <nav>
         <div className='nav-container'>
@@ -64,7 +68,7 @@ export default function Navbar( { isGrey, isPurple } ) {
                   key={item[0]}> 
               {item[0]} 
             </Link>) }
-            <a href={"../".repeat(window.location.pathname.split("/").filter((val) => val !== "").length) + "resume.pdf"} title="CV" style={{color: color}}>CV</a>
+            {isBrowser && <a href={"../".repeat(window.location.pathname.split("/").filter((val) => val !== "").length) + "resume.pdf"} title="CV" style={{color: color}}>CV</a>}
           </div>
         </div>
     </nav>

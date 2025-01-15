@@ -17,7 +17,7 @@ export default function About() {
                 <div className={styles.greeting}>
                   <h2 style={{display: 'inline' }}>Heyo!</h2> <h3 style={{display: 'inline' }}>   welcome to my plaground.</h3>
                 </div>
-                <p>I'm a computer scientist by schooling, yet my interests are quite wide. Some of my latest projects that I partiuclarly enjoyed working one are:</p>
+                <p>I'm a computer scientist by schooling, yet my interests are quite wide. Some of my latest projects that I particularly enjoyed working one are:</p>
                 <ul>
                   <li className={styles.list}><Link to="https://github.com/talicopanda/social-media-influence-analysis"><i>Analysing Influence on Social Media</i></Link></li>
                   <ul>
