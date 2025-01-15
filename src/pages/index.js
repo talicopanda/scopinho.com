@@ -13,7 +13,7 @@ import "../styles/global.css"
 
 export default function Home({ data }) {
   const { title } = data.site.siteMetadata;
-  const markdownFiles = data.allMarkdownRemark.nodes;
+  // const markdownFiles = data.allMarkdownRemark.nodes;
   return (
     <>
       <div className="gradient">
