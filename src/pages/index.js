@@ -61,7 +61,10 @@ export const query = graphql`
         description
       }
     }
-    allMarkdownRemark {
+  }`
+
+  /**
+   * allMarkdownRemark {
       nodes {
         frontmatter {
           title
@@ -77,4 +80,4 @@ export const query = graphql`
         id
       }
     }
-  }`
+   */
