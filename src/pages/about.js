@@ -28,7 +28,7 @@ export default function About() {
                     <li className={styles.sublist}>A project under the guidance of Professor Niv Dayan for building an efficient and robust key-value store database from scratch in C++.</li>
                   </ul>
                 </ul>
-                <p>Currently a Software Engineer at <span style={{fontSize: '22px', fontWeight: 'bold'}}>Microsoft</span> and a graduate of the <span style={{fontSize: '22px', fontWeight: 'bold'}}>University of Toronto</span>.</p>
+                <p>Currently a <i>Software Engineer</i> at <span style={{fontSize: '22px', fontWeight: 'bold'}}>Microsoft</span> and a graduate of the <span style={{fontSize: '22px', fontWeight: 'bold'}}>University of Toronto</span>.</p>
               </div>
           </section>
         </div>
