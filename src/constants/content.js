@@ -1,1 +1,1 @@
-export const interests = ['Game Theory', 'Social Networks', 'Algorithms'];
+export const interests = ['Game Theory', 'Social Networks', 'Algorithms', 'Education Technology', 'Social Sciences'];

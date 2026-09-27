@@ -42,6 +42,9 @@ export default function Home({ data }) {
                 <a href="mailto:tales@scopinho.com?subject=scopinho.com | Let's Talk!" aria-label="Email">
                   <MdOutlineMail fill={colors.white} />
                 </a>
+                <a href="/resume.pdf" target="_blank" rel="noreferrer" aria-label="View resume (PDF)" className={styles.resumeLink}>
+                  Resume
+                </a>
               </IconContext.Provider>
             </div>
           </div>

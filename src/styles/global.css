@@ -154,6 +154,8 @@ footer p{
     background: radial-gradient(at top left, var(--light-purple) 0%, var(--dark-purple) 100%);
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .reverse-gradient {
