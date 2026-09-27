@@ -32,6 +32,22 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.1), 0 0 40px rgba(0,0,0,0.1), 0 0 60px rgba(0,0,0,0.1), 0 0 80px rgba(0,0,0,0.1);
 }
 
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 6vh;
+}
+
+.socials a {
+    display: inline-flex;
+    transition: transform 0.15s ease;
+}
+
+.socials a:hover {
+    transform: scale(1.15);
+}
+
 @media (max-width: 700px) {
     .header {
         display: flex;

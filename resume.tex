@@ -1,0 +1,180 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeCompanyHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\educationSubheading}[8]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      #5 & #6 \\
+      #7 & #8 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Tales Scopinho} \\ \vspace{1pt}
+  \normalfont +1 (226) 500-7149 $|$ \href{mailto:tales.scopinho@gmail.com}{\underline{tales.scopinho@gmail.com}} \\
+  \href{https://linkedin.com/in/tales-scopinho}{\underline{linkedin.com/in/tales-scopinho}} $|$ \href{https://github.com/talicopanda}{\underline{github.com/talicopanda}}
+\end{center}
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeCompanyHeading
+    {Microsoft}{Seattle, WA / Vancouver, BC}
+  \resumeSubSubheading
+    {Software Engineer II, \href{https://www.microsoft.com/en-us/microsoft-365/copilot}{\underline{Microsoft 365 Copilot}} (relocated to Seattle Oct. 2025)}{Aug. 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Led the cross-repository migration of the next-generation chat-response platform into the main Microsoft 365 Copilot application, delivering a production-ready server-side-rendered (SSR) chat architecture.}
+      \resumeItem{Designed SSR-first rendering and server-rendered streaming patterns that reduced client-side overhead and established reusable foundations for future AI-powered experiences.}
+      \resumeItem{Drove architecture for responsiveness and scalability, including chat orchestration evaluation and the transition to server-rendered chat streaming.}
+      \resumeItem{Used web profiling, bundling tools and root-cause analysis to identify rendering, networking, and client-side performance bottlenecks; shipped improvements to CPU utilization, payload and bundle size, and chat responsiveness.}
+    \resumeItemListEnd
+  \resumeSubSubheading
+    {Software Engineer, Microsoft 365 Copilot \& Whiteboard (Vancouver, BC)}{Oct. 2023 -- Aug. 2025}
+    \resumeItemListStart
+      \resumeItem{Contributed to the early architecture of Microsoft's enterprise AI chat experience, defining how Copilot-generated content integrates with Microsoft 365 applications and workflows.}
+      \resumeItem{Owned Copilot Chat orchestration areas including contextual grounding, conversation-history management, and operational tooling for LLM model observability.}
+      \resumeItem{Designed and delivered in-chat AI-powered widget experiences that enrich responses with interactive cards for files, email, meetings, and other Microsoft 365 content.}
+      \resumeItem{Led Responsible AI, privacy, security, compliance, and deployment-readiness work including technical onboarding, architecture reviews, data-flow analysis, and production-readiness processes for enterprise AI launches.}
+      \resumeItem{Shipped usability and product improvements for Microsoft Whiteboard across canvas interaction, multi-selection, templates, and toolbar experiences.}
+    \resumeItemListEnd
+  \resumeSubSubheading
+    {Software Engineer Intern, \href{https://app.whiteboard.microsoft.com/}{\underline{Microsoft Whiteboard}} (Seattle, WA)}{May 2022 -- Aug. 2022}
+    \resumeItemListStart
+      \resumeItem{Designed, developed and shipped a system for in-app feature announcements end-to-end, including accessible UI, ECS flighting, telemetry, testing, and production launch.}
+    \resumeItemListEnd
+  \resumeSubSubheading
+    {Project Manager \& Software Engineer Intern, Microsoft Whiteboard (Seattle, WA)}{May 2021 -- Aug. 2021}
+    \resumeItemListStart
+      \resumeItem{Designed, developed and shipped the \href{https://www.microsoft.com/en-us/microsoft-teams/group-chat-software}{Microsoft Teams} Whiteboard Tab's functionality for retrieving and opening existing whiteboards, implementing board-loading workflows, shared-board permission validation, and automated testing.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \educationSubheading
+    {University of Toronto}{Toronto, ON}
+    {Honours Bachelor of Science in Computer Science (cGPA: 3.9/4.0)}{Sep. 2019 -- Apr. 2023}
+    {Computer Science Specialist and Mathematics Minor}{}
+    {Member of U of T's \href{https://www.technologyleadershipinitiative.com/}{\underline{Technology Leadership Initiative}} program}{}
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{\textbf{Languages:} TypeScript/JavaScript, Python, Java, C, C++, SQL, Haskell, Racket, R. \\
+  \textbf{Technologies:} React, HTML/CSS, Tanstack, React Native, Express, MongoDB, FastAPI \\
+  \textbf{AI \& Platform:} AI/LLM orchestration, response streaming, contextual grounding, observability, responsible AI, compliance and operational tooling. \\
+  \textbf{Web development:} Performance profiling, server-side rendering, bundle and payload optimization, rendering and network optimization, accessibility, privacy, security, and data-flow analysis.}}
+\end{itemize}
+
+\newpage
+\section{Additional Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Toronto}{Toronto, ON}
+    {Teaching Assistant}{Jan. 2022 -- Apr. 2023}
+    \resumeItemListStart
+      \resumeItem{Courses: \href{https://artsci.calendar.utoronto.ca/course/csc324h1}{\underline{CSC324: Principles of Programming Languages}} and \href{https://artsci.calendar.utoronto.ca/course/csc209h1}{\underline{CSC209: Software Tools and Systems Programming}}.}
+      \resumeItem{Led tutorials, office hours, and assessment for courses spanning functional programming, language semantics, C, Unix/Linux, processes, memory management, debugging, and software tooling.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {\href{https://www.w.ai/}{Wombo AI}}{Toronto, ON / Sao Paulo, Brazil}
+    {Strategic Advisor \& Head of Operations, Brazil}{Sep. 2020 -- Apr. 2021}
+    \resumeItemListStart
+      \resumeItem{Advised and planned Wombo AI's Brazil launch, which generated more than 90\% of the startup's initial traffic and contributed to 50 million downloads in four months and \#1 App Store placement in 20+ countries.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Leadership}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {UofT AI (University of Toronto Artificial Intelligence Group)}{Toronto, ON}
+    {Director of Marketing}{Aug. 2020 -- May 2021}
+    \resumeItemListStart
+      \resumeItem{Led a team of 15 students managing marketing operations and promotion for the UofT AI Conference, attended by 800+ participants and featuring speakers including Turing Award recipient Geoffrey Hinton.}
+    \resumeItemListEnd
+  \resumeSubSubheading{External Relations Executive}{Feb. 2020 -- Aug. 2020}
+    \resumeItemListStart
+      \resumeItem{Organized an international machine learning competition for 100+ students from the top 25 North American universities, with a \$100,000 budget and partnerships including Google AI, IBM, DeepMind, and Vector Institute.}
+      \resumeItem{Created monthly artificial-intelligence newsletters for 1,300+ recipients.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Google Developer Student Club}{Toronto, ON}
+    {Research Director}{Aug. 2020 -- Jul. 2021}
+    \resumeItemListStart
+      \resumeItem{Researched technology news, tools, and learning resources and presented workshops for students from diverse computer-science backgrounds.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects \& Publication}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{Key-Value Store Database From Scratch} $|$ \emph{C++}}{\href{https://github.com/Hennmeister/kv-store}{[\underline{Report \& Code}]}}
+  \resumeProjectHeading{\textbf{Social Media Influence Analysis Research} $|$ \emph{Python}}{\href{https://github.com/talicopanda/social-media-influence-analysis/}{[\underline{Report \& Code}]}}
+  \resumeProjectHeading{\textbf{SeeMath: Mathematical Visualizations for Hypatia} $|$ \emph{Java}}{\href{https://github.com/Hennmeister/SeeMath}{[\underline{Code}]}}
+\resumeSubHeadingListEnd
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{Scopinho, Tales (2020). \href{https://doi.org/10.17975/sfj-2020-005}{\underline{Neural Networks on Recruiting Athletes}} (Viewpoint), \emph{STEM Fellowship Journal}.}}
+\end{itemize}
+
+\section{Awards and Honors}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{\textbf{2020, 2021, 2022, 2023:} Dean's Honors Scholar \\
+  \textbf{2019:} First Place, STEM Fellowship \href{https://1drv.ms/i/c/d406f2d7260315df/IQDfFQMm1_IGIIDUkAkAAAAAAbblErjPC3PQzwYo88FcYHQ?e=JGbzQP}{\underline{Literature Review Competition}}.}}
+\end{itemize}
+\end{document}
