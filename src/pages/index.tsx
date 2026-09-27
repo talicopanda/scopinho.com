@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql, type HeadFC, type PageProps } from 'gatsby'
 import * as styles from '../styles/home.module.css'
 import Typewriter from "typewriter-effect"
 import { colors } from "../constants/colors"
@@ -11,7 +11,11 @@ import { MdOutlineMail } from "react-icons/md"
 import "../styles/global.css"
 
 
-export default function Home({ data }) {
+type HomeData = {
+  site: { siteMetadata: { title: string; description: string } }
+}
+
+export default function Home({ data }: PageProps<HomeData>) {
   const { title } = data.site.siteMetadata;
   return (
     <div className="gradient">
@@ -55,7 +59,7 @@ export default function Home({ data }) {
   )
 }
 
-export const Head = () => <title>Tales Scopinho</title>
+export const Head: HeadFC = () => <title>Tales Scopinho</title>
 
 export const query = graphql`
   {

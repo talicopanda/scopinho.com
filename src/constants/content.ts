@@ -1,0 +1,1 @@
+export const interests: string[] = ['Game Theory', 'Social Networks', 'Algorithms', 'Education Technology', 'Social Sciences'];

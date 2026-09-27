@@ -1,8 +1,12 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 
+type FooterData = {
+  site: { siteMetadata: { copyright: string } }
+}
+
 export default function Footer() {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery<FooterData>(graphql`
   {
     site {
       siteMetadata {

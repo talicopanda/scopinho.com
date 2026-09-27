@@ -1,13 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
+import type { GatsbyConfig } from 'gatsby'
 
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-module.exports = {
+const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
@@ -22,3 +15,5 @@ module.exports = {
     DEV_SSR: true,
   }
 }
+
+export default config

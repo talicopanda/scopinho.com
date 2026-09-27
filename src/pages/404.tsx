@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby';
+import { Link, type HeadFC } from 'gatsby';
 import * as styles from '../styles/404.module.css'
 
 const NotFound = () => {
@@ -16,6 +16,6 @@ const NotFound = () => {
   );
 }
 
-export const Head = () => <title>404 | Tales Scopinho</title>
+export const Head: HeadFC = () => <title>404 | Tales Scopinho</title>
 
 export default NotFound
