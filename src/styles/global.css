@@ -2,13 +2,8 @@
 
 :root {
     --white: white;
-    --off-white: rgb(250, 249, 246);
-    --light-grey: rgb(240,240,240);
-    --grey: rgb(190,190,190);
     --dark-grey: rgb(64,64,64);
-    --black: black;
     --light-purple: rgb(146,43,225);
-    --purple: rgb(128, 37, 198);
     --dark-purple: rgb(43,9,107);
     --red: #D42990;
 }
@@ -31,125 +26,10 @@ p {
     line-height: 1.5em;
 }
 
-.btn {
-    display: inline-block;
-    background: var(--red);
-    padding: 10px 16px;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-/* layout & nav */
 .layout {
     max-width: 80vw;
     margin: 0 auto;
 }
-nav {
-    margin: 0 auto;
-    padding: 40px 0;
-}
-nav .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-nav .links {
-    text-align: center;
-}
-nav a {
-    display: inline-block;
-    text-decoration: none;
-}
-nav .links a {
-    margin-left: 20px;
-    font-weight: 400;
-    border-bottom: 3px solid transparent;
-}
-nav .socials a {
-    margin-right: 15px;
-}
-nav .links a:hover {
-    font-weight: bold;
-}
-
-/* The pseudo element has the same content and hover style, so it pre-sets the width
-of the element and visibility: hidden hides the pseudo element from actual view. */
-nav .links a::before {
-    display: block;
-    content: attr(title);
-    font-weight: bold;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-}
-nav .socials a:hover {
-    transform: scale(1.15);
-}
-
-.navbar-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-}
-
-.navbar-toggle .bar {
-    height: 3px;
-    width: 100%;
-    border-radius: 10px;
-}
-
-nav .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(255,255,255,0.85);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-    display: none;
-    flex-direction: column;
-}
-
-nav .sidebar svg {
-    margin: 1rem;
-    top: 0;
-    left: 0;
-}
-
-nav .sidebar-links a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--purple);
-    font-size: 20px;
-    font-weight: bold;
-    margin: 3vh auto;
-}
-
-@media (max-width: 700px) {
-    .navbar-toggle {
-        display: flex;
-    }
-
-    nav .links {
-        display: none;
-        width: 100%;
-    }
-
-}
-
-footer p{
-    text-align: center;
-    color: var(--dark-purple);
-    margin: 40px auto;
-}
-
-/* gradients */ 
-
 .gradient {
     background: radial-gradient(at top left, var(--light-purple) 0%, var(--dark-purple) 100%);
     background-repeat: no-repeat;
@@ -158,115 +38,6 @@ footer p{
     align-items: center;
 }
 
-.reverse-gradient {
-    background: radial-gradient(at bottom left, var(--light-purple) 0%, var(--dark-purple) 100%);
-    background-repeat: no-repeat;
-}
-
-/* sections */
-
-.section {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-.section h2, .reverse-gradient h2 {
-    font-size: 3em;
-    padding: 20px;
-    text-align: center;
-}
-
-.section h2 {
-    color: var(--purple);
-}
-
-.reverse-gradient .section h2 {
-    color: var(--white);
-}
-
-.grid-container {
-    margin: 10vh auto;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    max-width: 80vw;
-    width: calc(100% - 20px);
-}
-
-.card {
-    cursor: pointer;
-    /* height: 400px; */
-    width: 330px;
-    /* text-align: justify; */
-}
-
-.card-image:hover{
-    transform: scale(1.02);
-    /* background-color: rgba(240, 240, 240, 0.5);
-    border: 1px solid rgba(240, 240, 240, 0.9);
-    border-radius: 10px; */
-}
-
-
-.card-image {
-    align-items: center;
-    display: flex;
-    height: 180px;
-    margin: 5px;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 5px;
-    max-width: 100%;
-}
-
-.card-image img {
-    max-height: 100%;
-}
-
-.card-info {
-    align-items: flex-start;
-    display: flex;
-    gap: 10px;
-}
-
-.card-header > h4 {
-  margin: 12px 6px;
-  font-size: 20px;
-  color: var(--purple);
-}
-
-.card-info > p {
-  color: var(--dark-grey);
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0 7px 14px;
-  text-align: justify;
-}
-
-.card-tags {
-    list-style-type: none;
-    margin: auto 3px;
-}
-
-.card-tags li {
-    display: inline-block;
-    color: var(--white);
-    padding: 5px 8px;
-    margin: 0 5px 10px;
-    background-color: var(--red);
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-
 .line-break {
     text-align-last: unset;
 }
@@ -274,14 +45,5 @@ footer p{
 @media (max-width: 700px) {
     .line-break {
         text-align-last: justify;
-    }
-
-    .round-img {
-        max-width: 65vw;
-        order: 1;
-    }
-
-    .links {
-        visibility: hidden;
     }
 }

@@ -69,9 +69,12 @@
 
 \begin{center}
   \textbf{\Huge \scshape Tales Scopinho} \\ \vspace{1pt}
-  \normalfont +1 (226) 500-7149 $|$ \href{mailto:tales.scopinho@gmail.com}{\underline{tales.scopinho@gmail.com}} \\
-  \href{https://linkedin.com/in/tales-scopinho}{\underline{linkedin.com/in/tales-scopinho}} $|$ \href{https://github.com/talicopanda}{\underline{github.com/talicopanda}}
+  \normalfont CAN: (226) 500-7149 $|$ USA: (206) 437-2614 \\
+  \href{https://linkedin.com/in/tales-scopinho}{\underline{linkedin.com/in/tales-scopinho}} $|$ \href{mailto:tales.scopinho@gmail.com}{\underline{tales.scopinho@gmail.com}} $|$ \href{https://github.com/talicopanda}{\underline{github.com/talicopanda}}
 \end{center}
+
+\section{Summary}
+    Software engineer building performance-focused web and AI chat experiences for millions of users. Experienced in web development, React, LLM orchestration, browser performance, accessibility and enterprise compliance.
 
 \section{Experience}
 \resumeSubHeadingListStart
@@ -80,29 +83,30 @@
   \resumeSubSubheading
     {Software Engineer II, \href{https://www.microsoft.com/en-us/microsoft-365/copilot}{\underline{Microsoft 365 Copilot}} (relocated to Seattle Oct. 2025)}{Aug. 2025 -- Present}
     \resumeItemListStart
-      \resumeItem{Led the cross-repository migration of the next-generation chat-response platform into the main Microsoft 365 Copilot application, delivering a production-ready server-side-rendered (SSR) chat architecture.}
-      \resumeItem{Designed SSR-first rendering and server-rendered streaming patterns that reduced client-side overhead and established reusable foundations for future AI-powered experiences.}
-      \resumeItem{Drove architecture for responsiveness and scalability, including chat orchestration evaluation and the transition to server-rendered chat streaming.}
-      \resumeItem{Used web profiling, bundling tools and root-cause analysis to identify rendering, networking, and client-side performance bottlenecks; shipped improvements to CPU utilization, payload and bundle size, and chat responsiveness.}
+      \resumeItem{Leading contributor to the architecture, implementation, and migration of Copilot's chat streaming from a React-centric canvas to incremental server-side Markdown-to-HTML rendering with Web Components, achieving 45\% lower CPU time, 9\% lower heap usage, and 41\% less Long Animation Frame (LoAF) blocking time.}
+      \resumeItem{Owned the architecture and implementation of AI progress-messages (chain-of-thought), coordinating across teams to map LLM orchestration events to streamed UI components for reasoning, search, code execution, skills, and agents, with end-to-end validation.}
+      \resumeItem{Designed reusable server-rendered streaming patterns for accessible AI-chat rich responses, including nested and interleaved streams, screen-reader announcements, and locale-aware Web Components.}
     \resumeItemListEnd
   \resumeSubSubheading
-    {Software Engineer, Microsoft 365 Copilot \& Whiteboard (Vancouver, BC)}{Oct. 2023 -- Aug. 2025}
+    {Software Engineer, Microsoft 365 Copilot \&  \href{https://app.whiteboard.microsoft.com/}{\underline{Microsoft Whiteboard}} (Vancouver, BC)}{Oct. 2023 -- Aug. 2025}
     \resumeItemListStart
-      \resumeItem{Contributed to the early architecture of Microsoft's enterprise AI chat experience, defining how Copilot-generated content integrates with Microsoft 365 applications and workflows.}
-      \resumeItem{Owned Copilot Chat orchestration areas including contextual grounding, conversation-history management, and operational tooling for LLM model observability.}
-      \resumeItem{Designed and delivered in-chat AI-powered widget experiences that enrich responses with interactive cards for files, email, meetings, and other Microsoft 365 content.}
-      \resumeItem{Led Responsible AI, privacy, security, compliance, and deployment-readiness work including technical onboarding, architecture reviews, data-flow analysis, and production-readiness processes for enterprise AI launches.}
-      \resumeItem{Shipped usability and product improvements for Microsoft Whiteboard across canvas interaction, multi-selection, templates, and toolbar experiences.}
+      \resumeItem{Reduced Copilot's P95 user-perceived page load time from 25 seconds to under 10 seconds through profiling and critical-path optimizations across rendering, networking, and bundle size reductions.}
+      \resumeItem{Owned the technical design and implementation of Copilot's side-chat orchestration layer, covering in-chat grounding with enterprise data, conversation storage, LLM observability, as well as responsible AI, privacy and security reviews.}
+      \resumeItem{Defined technical approaches for early Copilot integrations with Word, PowerPoint, and Excel, ensuring support for M365-file grounding in chat, LLM-generated document creation, and chat-to-application handoff flows.}
+      \resumeItem{Built a modular React component system for AI-powered cards displaying first-party and third-party files, email, meetings, and other Microsoft 365 content artifacts in Office search results.}
+      \resumeItem{Shipped React usability improvements to Microsoft Whiteboard's canvas interactions, selection, panning, templates, and toolbar.}
     \resumeItemListEnd
   \resumeSubSubheading
-    {Software Engineer Intern, \href{https://app.whiteboard.microsoft.com/}{\underline{Microsoft Whiteboard}} (Seattle, WA)}{May 2022 -- Aug. 2022}
+    {Project Manager \& Software Engineer Intern, Microsoft Whiteboard (Seattle, WA)}{Summers 2021 \& 2022}
     \resumeItemListStart
-      \resumeItem{Designed, developed and shipped a system for in-app feature announcements end-to-end, including accessible UI, ECS flighting, telemetry, testing, and production launch.}
+      \resumeItem{Built and shipped an in-app feature announcement dialog system for Microsoft Whiteboard as well as Microsoft Teams workflows for retrieving shared boards, validating permissions, and opening boards from Teams chats. }
     \resumeItemListEnd
-  \resumeSubSubheading
-    {Project Manager \& Software Engineer Intern, Microsoft Whiteboard (Seattle, WA)}{May 2021 -- Aug. 2021}
+
+  \resumeSubheading
+    {\href{https://www.w.ai/}{Wombo AI}}{Toronto, ON / Sao Paulo, Brazil}
+    {Strategic Advisor \& Head of Operations, Brazil}{Sep. 2020 -- Apr. 2021}
     \resumeItemListStart
-      \resumeItem{Designed, developed and shipped the \href{https://www.microsoft.com/en-us/microsoft-teams/group-chat-software}{Microsoft Teams} Whiteboard Tab's functionality for retrieving and opening existing whiteboards, implementing board-loading workflows, shared-board permission validation, and automated testing.}
+      \resumeItem{Planned and executed Wombo AI launch in Brazil, helping drive early adoption in a market accounting for over 90\% of initial traffic; the app reached 50 million downloads in four months and \#1 App Store rankings in 20+ countries.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -117,15 +121,15 @@
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{\textbf{Languages:} TypeScript/JavaScript, Python, Java, C, C++, SQL, Haskell, Racket, R. \\
-  \textbf{Technologies:} React, HTML/CSS, Tanstack, React Native, Express, MongoDB, FastAPI \\
-  \textbf{AI \& Platform:} AI/LLM orchestration, response streaming, contextual grounding, observability, responsible AI, compliance and operational tooling. \\
-  \textbf{Web development:} Performance profiling, server-side rendering, bundle and payload optimization, rendering and network optimization, accessibility, privacy, security, and data-flow analysis.}}
+  \small{\item{\textbf{Languages:} TypeScript, JavaScript, Python, Java, C, C++, SQL, R \\
+  \textbf{Frontend:} 	React, HTML/CSS, Web Components, TanStack, React Native \\
+  \textbf{Backend \& AI:} LLM orchestration, compliant AI, response streaming, Express, FastAPI \\
+  \textbf{Engineering:} Accessibility, performance profiling and optimization}}
 \end{itemize}
 
-\newpage
-\section{Additional Experience}
+\section{University Experience}
 \resumeSubHeadingListStart
+
   \resumeSubheading
     {University of Toronto}{Toronto, ON}
     {Teaching Assistant}{Jan. 2022 -- Apr. 2023}
@@ -133,16 +137,6 @@
       \resumeItem{Courses: \href{https://artsci.calendar.utoronto.ca/course/csc324h1}{\underline{CSC324: Principles of Programming Languages}} and \href{https://artsci.calendar.utoronto.ca/course/csc209h1}{\underline{CSC209: Software Tools and Systems Programming}}.}
       \resumeItem{Led tutorials, office hours, and assessment for courses spanning functional programming, language semantics, C, Unix/Linux, processes, memory management, debugging, and software tooling.}
     \resumeItemListEnd
-  \resumeSubheading
-    {\href{https://www.w.ai/}{Wombo AI}}{Toronto, ON / Sao Paulo, Brazil}
-    {Strategic Advisor \& Head of Operations, Brazil}{Sep. 2020 -- Apr. 2021}
-    \resumeItemListStart
-      \resumeItem{Advised and planned Wombo AI's Brazil launch, which generated more than 90\% of the startup's initial traffic and contributed to 50 million downloads in four months and \#1 App Store placement in 20+ countries.}
-    \resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\section{Leadership}
-\resumeSubHeadingListStart
   \resumeSubheading
     {UofT AI (University of Toronto Artificial Intelligence Group)}{Toronto, ON}
     {Director of Marketing}{Aug. 2020 -- May 2021}
@@ -164,13 +158,12 @@
 
 \section{Projects \& Publication}
 \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{Key-Value Store Database From Scratch} $|$ \emph{C++}}{\href{https://github.com/Hennmeister/kv-store}{[\underline{Report \& Code}]}}
-  \resumeProjectHeading{\textbf{Social Media Influence Analysis Research} $|$ \emph{Python}}{\href{https://github.com/talicopanda/social-media-influence-analysis/}{[\underline{Report \& Code}]}}
-  \resumeProjectHeading{\textbf{SeeMath: Mathematical Visualizations for Hypatia} $|$ \emph{Java}}{\href{https://github.com/Hennmeister/SeeMath}{[\underline{Code}]}}
+  \resumeProjectHeading{\textbf{\href{https://github.com/Hennmeister/kv-store}{\underline{Key-Value Store Database From Scratch}}} $|$ \emph{C++}}{\textit{Apr. 2023}}
+  \resumeProjectHeading{\textbf{\href{https://github.com/talicopanda/social-media-influence-analysis/}{\underline{Social Media Influence Analysis Research}}} $|$ \emph{Python}}{\textit{Apr. 2023}}
+  \resumeProjectHeading{\textbf{\href{https://github.com/Hennmeister/SeeMath}{\underline{SeeMath: Mathematical Visualizations for Hypatia}}} $|$ \emph{Java}}{\textit{Dec. 2020}}
+  \resumeProjectHeading{Scopinho, Tales (2020). \href{https://doi.org/10.17975/sfj-2020-005}{\underline{Neural Networks on Recruiting Athletes}} (Viewpoint), \emph{STEM Fellowship Journal}.}{\textit{Aug. 2020}}
+
 \resumeSubHeadingListEnd
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{Scopinho, Tales (2020). \href{https://doi.org/10.17975/sfj-2020-005}{\underline{Neural Networks on Recruiting Athletes}} (Viewpoint), \emph{STEM Fellowship Journal}.}}
-\end{itemize}
 
 \section{Awards and Honors}
 \begin{itemize}[leftmargin=0.15in, label={}]

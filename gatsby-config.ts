@@ -8,8 +8,7 @@ const config: GatsbyConfig = {
   ],
   siteMetadata: {
     title: 'Tales Scopinho',
-    description: 'Personal website',
-    copyright: 'Copyright © 2026 Tales Scopinho'
+    description: 'Personal website'
   },
   flags: {
     DEV_SSR: true,
